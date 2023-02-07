@@ -29,7 +29,7 @@ body{
     margin: 0vh 40vw 0vh 5vw; /* superior/direiro/inferior/esq*/
 }
 
-.profilePic{
+.profilePicBG{
     grid-area: profile;
     background-color: white;
     border-radius: 50%;
@@ -67,11 +67,42 @@ body{
     border-radius: 5px;
 }
 
+
 .knowledge{
+
     grid-area: knowledge;
     background-color: cadetblue;
     margin: 10vh 10vw;
     border-radius: 5px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    
+ 
+}
+
+.knowledge h1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.knowItem{
+
+    background-color: orange;
+    border-radius: 25px;
+    
+    width: 100px;
+    height: 25px;
+    
+    padding: 8px;
+}
+
+.knowText{
+    text-align: center;
+    margin: auto;
 }
 
 .projects{
