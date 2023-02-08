@@ -6,15 +6,14 @@ body{
 .container{
     display: grid;
     grid-template-areas: 
-    "profile projects "
-    "knowledge experience"
-    "contact education";
+    "profile contact knowledge"
+    "experience experience education"
+    "projects projects projects";
 
     gap: 5px;
 
-    height: 100vh;
-    width: 100vw;
-
+    margin-top: 100px;
+    margin-bottom: 300px;
 }
 
 .profile{
@@ -116,7 +115,7 @@ body{
 .knowItem{
 
     background-color: orange;
-    border-radius: 25px;
+    border-radius: 15px;
     
     width: 100px;
     height: 25px;
@@ -135,6 +134,17 @@ body{
     border-radius: 5px;
 }
 
+.projectCard{
+    background-color:  rgb(92, 82, 151);
+    border-radius: 15px;
+    margin: 5px ;
+}
+
+.projectCard a{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
 
 .experience{
     grid-area: experience;
@@ -146,6 +156,10 @@ body{
 .experience h1{
     display: flex;
     justify-content: start;
+}
+
+.experience h4, h5, h6{
+    margin: 5px 0px 5px 0px;
 }
 
 .education{
