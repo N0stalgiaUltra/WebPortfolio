@@ -1,7 +1,13 @@
 body{
-    background-color: rgb(62, 53, 114);
-
+    background-color: #22212C;
 }
+
+h2{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    color: #837E9F;
+}
+
 
 .container{
     display: grid;
@@ -18,7 +24,7 @@ body{
 
 .profile{
     grid-area: profile;
-    background-color: rgb(120, 107, 192);
+    background-color: #302F3D;
     
 
     border-radius: 5px;
@@ -49,7 +55,7 @@ body{
 }
 
 
-.profile h3, h4{
+.profile h2, h4{
     /* LEMBRAR DE VOLTAR PARA ESTILIZAR O TEXTO*/
     grid-area: profile;
     text-align: center;   
@@ -59,7 +65,7 @@ body{
 
 .contact {
     grid-area: contact;
-    background-color: rgb(120, 107, 192);
+    background-color: #302F3D;
     margin: 10px 25px 25px 25px;
     border-radius: 5px;
 
@@ -67,20 +73,20 @@ body{
     grid-template-rows: repeat(3, 1fr);
 
     gap: 5px;
-    justify-items: center;
+    justify-items: start;
 }
 
-.contact h1{
+.contact h2{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    justify-content: start;
 }
 
 .contact a{
     grid-column: 2;
     text-decoration: none; 
-    color: rgb(62, 53, 114); 
     margin: 25px 0px 25px 0px;
     justify-self: start;
 }
@@ -94,7 +100,7 @@ body{
 .knowledge{
 
     grid-area: knowledge;
-    background-color: rgb(120, 107, 192); 
+    background-color: #302F3D; 
     margin: 10px 25px 25px 25px;;
     border-radius: 5px;
 
@@ -105,7 +111,7 @@ body{
  
 }
 
-.knowledge h1{
+.knowledge h2{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -128,7 +134,7 @@ body{
 
 .projects{
     grid-area: projects;
-    background-color: rgb(120, 107, 192); 
+    background-color: #302F3D; 
     margin: 10px 25px 25px 25px;;
     border-radius: 5px;
 
@@ -138,7 +144,7 @@ body{
     grid-auto-rows: auto;
 }
 
-.projects h1{
+.projects h2{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -171,12 +177,12 @@ body{
 }
 .experience{
     grid-area: experience;
-    background-color: rgb(120, 107, 192); 
+    background-color: #302F3D; 
     margin: 10px 25px 25px 25px;;
     border-radius: 5px;
 }
 
-.experience h1{
+.experience h2{
     display: flex;
     justify-content: start;
 }
@@ -187,12 +193,12 @@ body{
 
 .education{
     grid-area: education;
-    background-color: rgb(120, 107, 192); 
-    margin: 10px 25px 25px 25px;;
+    background-color: #302F3D; 
+    margin: 10px 25px 25px 25px;
     border-radius: 5px;
 }
 
-.education h1{
+.education h2{
     display:flex;
     justify-content: center;
 }
