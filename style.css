@@ -10,7 +10,7 @@ body{
     "experience experience education"
     "projects projects projects";
 
-    gap: 5px;
+    gap: 1px;
 
     margin-top: 100px;
     margin-bottom: 300px;
@@ -18,13 +18,12 @@ body{
 
 .profile{
     grid-area: profile;
-    justify-self: stretch;
-    background-color: grey;
+    background-color: rgb(120, 107, 192);
     
 
     border-radius: 5px;
     padding: 8px;
-    margin: 0vh 40vw 0vh 5vw; /* superior/direiro/inferior/esq*/
+    margin:  10px 25px 25px 25px; /* superior/direiro/inferior/esq*/
 }
 
 .profilePicBG{
@@ -50,18 +49,18 @@ body{
 }
 
 
-.profileText{
+.profile h3, h4{
     /* LEMBRAR DE VOLTAR PARA ESTILIZAR O TEXTO*/
     grid-area: profile;
     text-align: center;   
-    margin-top: 15%;
+    margin: 20px 0px 20px 0px;
 }
 
 
 .contact {
     grid-area: contact;
     background-color: rgb(120, 107, 192);
-    margin: 10px 50px 25px 50px;
+    margin: 10px 25px 25px 25px;
     border-radius: 5px;
 
     display: grid;
@@ -96,7 +95,7 @@ body{
 
     grid-area: knowledge;
     background-color: rgb(120, 107, 192); 
-    margin: 10px 50px 25px 50px;
+    margin: 10px 25px 25px 25px;;
     border-radius: 5px;
 
     display: grid;
@@ -130,9 +129,24 @@ body{
 .projects{
     grid-area: projects;
     background-color: rgb(120, 107, 192); 
-    margin: 10px 50px 25px 50px;
+    margin: 10px 25px 25px 25px;;
     border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-rows: auto;
 }
+
+.projects h1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+}
+
 
 .projectCard{
     background-color:  rgb(92, 82, 151);
@@ -140,16 +154,20 @@ body{
     margin: 5px ;
 }
 
-.projectCard a{
+.projectCard a, p{
     margin: 10px;
     display: flex;
     justify-content: center;
 }
-
+.projectCard footer{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
 .experience{
     grid-area: experience;
     background-color: rgb(120, 107, 192); 
-    margin: 10px 50px 25px 50px;
+    margin: 10px 25px 25px 25px;;
     border-radius: 5px;
 }
 
@@ -165,7 +183,7 @@ body{
 .education{
     grid-area: education;
     background-color: rgb(120, 107, 192); 
-    margin: 10px 50px 25px 50px;
+    margin: 10px 25px 25px 25px;;
     border-radius: 5px;
 }
 
