@@ -6,13 +6,23 @@ h2{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 700;
     color: #837E9F;
+
+    
+    display:flex;
+    justify-content: start;
+    margin-left: 10px;
 }
 
-h5, h6, li{
+
+h4, h5, h6, li{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 600;
     color: #837E9F;
+    margin: 5px 0px 5px 0px;
+
 }
+
+
 
 p, a{
     font-family: 'Merriweather Sans', sans-serif;
@@ -74,6 +84,7 @@ p, a{
 
 .profile h2, p{
     grid-area: profile;
+    display: block;
     text-align: center;   
     margin: 20px 0px 20px 0px;
 }
@@ -100,8 +111,6 @@ p, a{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    justify-content: start;
-    margin-left: 10px;
 }
 
 .contact a{
@@ -136,30 +145,38 @@ p, a{
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
- 
+    gap: 1px;
+    justify-items: center;
+    
 }
 
 .knowledge h2{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
+
+    display: flex;
+    justify-self: normal;
 }
 
 .knowItem{
-
+   
     background-color: #CB92B1;
-    border-radius: 15px;
+    border-radius: 100px;
     
     width: 100px;
-    height: 25px;
+    height: 20px;
     
     padding: 8px;
 }
-.knowText{
+.knowledge p{
+
     text-align: center;
     margin: auto;
+    color: #22212C;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .projects{
@@ -182,7 +199,6 @@ p, a{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    display: flex;
     justify-content: center;
 }
 
@@ -208,24 +224,7 @@ p, a{
     margin: 10px 0px 10px 0px;
     
 }
-.experience{
-    grid-area: experience;
-    background-color: #302F3D; 
-    margin: 10px 25px 25px 25px;
-    
-    border-radius: 20px;
-    border-right: solid 5px rgba(0, 0, 0, 0.452);
-    border-bottom: solid 5px rgba(0,0,0,0.452);
-}
 
-.experience h2{
-    display: flex;
-    justify-content: start;
-}
-
-.experience h4, h5, h6{
-    margin: 5px 0px 5px 0px;
-}
 
 .education{
     grid-area: education;
@@ -236,9 +235,16 @@ p, a{
     border-right: solid 5px rgba(0, 0, 0, 0.452);
     border-bottom: solid 5px rgba(0,0,0,0.452);
 }
-
-.education h2{
-    display:flex;
-    justify-content: center;
+.experience{
+    grid-area: experience;
+    background-color: #302F3D; 
+    margin: 10px 25px 25px 25px;
+    
+    border-radius: 20px;
+    border-right: solid 5px rgba(0, 0, 0, 0.452);
+    border-bottom: solid 5px rgba(0,0,0,0.452);
 }
 
+.experience h4, h5, h6{
+    margin-left: 10px;
+}
