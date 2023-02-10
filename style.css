@@ -8,6 +8,12 @@ h2{
     color: #837E9F;
 }
 
+h5, h6, li{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    color: #837E9F;
+}
+
 p, a{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 300;
@@ -22,8 +28,8 @@ p, a{
 .container{
     display: grid;
     grid-template-areas: 
-    "profile contact knowledge"
-    "experience experience education"
+    "profile contact education"
+    "experience experience knowledge"
     "projects projects projects";
 
     gap: 1px;
@@ -37,7 +43,9 @@ p, a{
     background-color: #302F3D;
     
 
-    border-radius: 5px;
+    border-radius: 20px;
+    border-right: solid 5px rgba(0, 0, 0, 0.452);
+    border-bottom: solid 5px rgba(0,0,0,0.452);
     padding: 8px;
     margin:  10px 25px 25px 25px; /* superior/direiro/inferior/esq*/
 }
@@ -75,14 +83,16 @@ p, a{
     grid-area: contact;
     background-color: #302F3D;
     margin: 10px 25px 25px 25px;
-    border-radius: 5px;
+    
+    border-radius: 20px;
+    border-right: solid 5px rgba(0, 0, 0, 0.452);
+    border-bottom: solid 5px rgba(0,0,0,0.452);
 
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 
-    gap: 5px;
     justify-items: start;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .contact h2{
@@ -94,10 +104,10 @@ p, a{
     margin-left: 10px;
 }
 
-.contact a, p{
+.contact a{
     grid-column: 2;
     text-decoration: none; 
-    margin: 25px 0px 25px 5px;
+    margin: 5px 0px 5px 5px;
     justify-self: start;
     
 }
@@ -108,6 +118,7 @@ p, a{
     height: 30px;
     grid-column: 1;
     justify-self: start;
+    align-self: flex-start;
     margin: 20px 5px 15px 10px
     
 }
@@ -117,7 +128,10 @@ p, a{
     grid-area: knowledge;
     background-color: #302F3D; 
     margin: 10px 25px 25px 25px;;
-    border-radius: 5px;
+    
+    border-radius: 20px;
+    border-right: solid 5px rgba(0, 0, 0, 0.452);
+    border-bottom: solid 5px rgba(0,0,0,0.452);
 
     display: grid;
 
@@ -152,7 +166,10 @@ p, a{
     grid-area: projects;
     background-color: #302F3D; 
     margin: 10px 25px 25px 25px;;
-    border-radius: 5px;
+    
+    border-radius: 20px;    
+    border-right: solid 5px rgba(0, 0, 0, 0.452);
+    border-bottom: solid 5px rgba(0,0,0,0.452);
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -194,8 +211,11 @@ p, a{
 .experience{
     grid-area: experience;
     background-color: #302F3D; 
-    margin: 10px 25px 25px 25px;;
-    border-radius: 5px;
+    margin: 10px 25px 25px 25px;
+    
+    border-radius: 20px;
+    border-right: solid 5px rgba(0, 0, 0, 0.452);
+    border-bottom: solid 5px rgba(0,0,0,0.452);
 }
 
 .experience h2{
@@ -211,7 +231,10 @@ p, a{
     grid-area: education;
     background-color: #302F3D; 
     margin: 10px 25px 25px 25px;
-    border-radius: 5px;
+    
+    border-radius: 20px;
+    border-right: solid 5px rgba(0, 0, 0, 0.452);
+    border-bottom: solid 5px rgba(0,0,0,0.452);
 }
 
 .education h2{
