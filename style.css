@@ -8,13 +8,15 @@ h2{
     color: #837E9F;
 }
 
-p{
+p, a{
     font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     align-self: center;
     color: #837E9F;
 
 }
+
+
 
 
 .container{
@@ -80,6 +82,7 @@ p{
 
     gap: 5px;
     justify-items: start;
+    justify-content: start;
 }
 
 .contact h2{
@@ -88,19 +91,22 @@ p{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-content: start;
+    margin-left: 10px;
 }
 
 .contact a{
     grid-column: 2;
     text-decoration: none; 
-    margin: 25px 0px 25px 0px;
+    margin: 25px 0px 25px 5px;
     justify-self: start;
+    
 }
 
 .contact img{
     grid-column: 1;
-    justify-self: end;
-    margin: 20px 5px 15px 0px
+    justify-self: start;
+    margin: 20px 5px 15px 10px
+    
 }
 
 .knowledge{
@@ -123,9 +129,10 @@ p{
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
 .knowItem{
 
-    background-color: orange;
+    background-color: #CB92B1;
     border-radius: 15px;
     
     width: 100px;
