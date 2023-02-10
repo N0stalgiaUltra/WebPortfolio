@@ -94,7 +94,7 @@ p, a{
     margin-left: 10px;
 }
 
-.contact a{
+.contact a, p{
     grid-column: 2;
     text-decoration: none; 
     margin: 25px 0px 25px 5px;
@@ -102,7 +102,10 @@ p, a{
     
 }
 
+
 .contact img{
+    width: 30px;
+    height: 30px;
     grid-column: 1;
     justify-self: start;
     margin: 20px 5px 15px 10px
